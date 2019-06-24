@@ -1,0 +1,32 @@
+@media screen and (min-width: 1750px) {
+  .btn-banner__bg {
+    height: 185px; } }
+
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+  .modal-banner__box {
+    -webkit-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85); }
+  span.modal-banner__left-text {
+    font-size: 40px; }
+  span.modal-banner__left-text--orange {
+    font-size: 50px; } }
+
+@media screen and (max-width: 767px) {
+  .btn-banner {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 20px; }
+  .btn-banner__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  span.btn-banner__title {
+    max-width: 100%;
+    margin-bottom: 20px; }
+  .btn-banner__button {
+    margin-left: 0; }
+  .btn-banner__bg {
+    height: 100%;
+    background-position-x: right; } }
