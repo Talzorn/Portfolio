@@ -10,10 +10,10 @@
 используемые технологии.
 ```
 
-## Вот сайты проектов которые представлены здесь
-https://relifeglobal.org/
+## Сайты проектов из которых предоставлены выдержки кода
+[ReLife web](https://relifeglobal.org/) \
+[ReLife mobile apple](https://apps.apple.com/ua/app/relife/id1644586629) \
+[ReLife mobile google](https://play.google.com/store/apps/details?id=org.relifeglobal.app)
 
-https://apps.apple.com/ua/app/relife/id1644586629
-https://play.google.com/store/apps/details?id=org.relifeglobal.app
+[kalyna.studio](https://kalyna.studio/)
 
-https://kalyna.studio/
