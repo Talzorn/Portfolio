@@ -9,3 +9,10 @@
 представленного проекта и содержат краткое описание самого проекта и
 используемые технологии.
 ```
+
+## Вот сайты проектов которые представлены здесь
+https://relifeglobal.org/
+https://play.google.com/store/apps/details?id=org.relifeglobal.app
+https://apps.apple.com/ua/app/relife/id1644586629
+
+https://kalyna.studio/
