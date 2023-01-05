@@ -1,0 +1,114 @@
+@mixin theme-light {
+    // color
+    --color-secondary: #1A1919;
+    --color-secondary-shade: #313030;
+    --color-secondary-contrats: #FEFCFB;
+
+    // text
+    --text-primary: #1A1919;
+    --text-secondary: #1A1919;
+    --text-tertiary: #6B6965;
+    --text-green: #29562E;
+    --text-green-rgb: 41,86,46;
+
+    // bg
+    --bg-primary: #FEFCFB;
+    --bg-primary-rgb: 254,252,251;
+    --bg-secondary: #FEF2E7;
+    --bg-secondary-shade: #F3CBAF;
+    --bg-tertiary: #EBEAE6;
+    --bg-quaternary: #D9F2DC;
+
+    // header
+    --hedaer-bg-gradient: linear-gradient(180deg, rgba(254, 252, 251, 0.5) 0%, rgba(254, 252, 251, 0) 100%);
+    --logo: var(--color-primary);
+
+    // scroll bar
+    --scrollbar-track: #E8E7E3;
+    --scrollbar-thumb: var(--text-primary);
+
+    // footer
+    --footer-title: #83817C;
+
+    // menu
+    --menu-bg: #FE4E00;
+
+    //all
+    --error-orange-contrast: #FE4E00;
+}
+
+@mixin theme-dark {
+    // color
+    --color-secondary: #FEFCFB;
+    --color-secondary-shade: #e0dedd;
+    --color-secondary-contrats: #1A1919;
+
+    // text
+    --text-primary: #FEFCFB;
+    --text-secondary: #D7D6D3;
+    --text-tertiary: #AFAC9E;
+    --text-green: #B2E5B9;
+    --text-green-rgb: 178,229,185;
+
+    // bg
+    --bg-primary: #343232;
+    --bg-primary-rgb: 52,50,50;
+    --bg-secondary: #F3CBAF;
+    --bg-secondary-shade: #E4B295;
+    --bg-tertiary: #41403E;
+    --bg-quaternary: #1C341F;
+
+    // header
+    --hedaer-bg-gradient: linear-gradient(180deg, rgba(52, 50, 50, 0.5) 0%, rgba(26, 25, 25, 0) 100%);
+    --logo: var(--text-primary);
+
+    // scroll bar
+    --scrollbar-track: #75736E;
+    --scrollbar-thumb: var(--text-primary);
+
+    // footer
+    --footer-title: #AFAC9E;
+
+    // menu
+    --menu-bg: #CC3F00;
+
+    //all
+    --error-orange-contrast: #863101;
+}
+
+:root {
+    // fonts
+    --f-inter: 'Inter', sans-serif;
+    --f-mulish: 'Mulish', sans-serif;
+
+    // color
+    --color-primary: #FE4E00;
+    --color-primary-contrats: #FEFCFB;
+    --color-danger: #E94E31;
+    --color-danger-shade: #FEF7F6;
+    --color-success: #29562E;
+    --color-success-shade: #ECF9ED;
+
+    // all
+    --menu-btn-bg: var(--color-primary);
+    --menu-btn-line: #FEFCFB;
+    --hero-h1: #1A1919;
+    --approach-menu: #863101;
+    --approach-color: #1A1919;
+
+    @include theme-light;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        @include theme-dark;
+    }
+}
+
+body.light {
+    @include theme-light;
+}
+
+body.dark {
+    @include theme-dark;
+}

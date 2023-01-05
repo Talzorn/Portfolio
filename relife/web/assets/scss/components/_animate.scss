@@ -1,0 +1,127 @@
+$transition: opacity .65s ease-out, transform .65s ease-out;
+$t-low: opacity 1s linear, transform 1s linear;
+$t-mini: opacity .5s linear, transform .5s linear;
+
+.anim-up {
+    opacity: 0;
+    transform: translateY(42px);
+    transition: $transition;
+    &.anim-start {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.anim-down {
+    opacity: 0;
+    transform: translateY(-42px);
+    transition: $transition;
+    &.anim-start {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.anim-fade {
+    opacity: 0;
+    transition: $t-low;
+    &.anim-start {
+        opacity: 1;
+    }
+}
+.anim {
+    pointer-events: none;
+    &.anim-start {
+        pointer-events: auto;
+    }
+}
+
+header {
+    .wrapper {
+        opacity: 0;
+        transform: translateY(-42px);
+        animation: header-down .65s .1s ease-out forwards;
+    }
+}
+@keyframes header-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-42px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.hero {
+    h3 {
+        transition-delay: .3s;
+    }
+    .join {
+        transition-delay: .45s;
+    }
+    .phone {
+        transition-delay: .15s;
+    }
+    &__people {
+        &.anim-start {
+            .hero__avatar {
+                opacity: 1;
+                transition: $t-mini;
+                &:nth-child(1) {
+                    transition-delay: .15s;
+                }
+                &:nth-child(2) {
+                    transition-delay: .20s;
+                }
+                &:nth-child(3) {
+                    transition-delay: .25s;
+                }
+                &:nth-child(4) {
+                    transition-delay: .35s;
+                }
+                &:nth-child(5) {
+                    transition-delay: .4s;
+                }
+                &:nth-child(6) {
+                    transition-delay: .45s;
+                }
+                &:nth-child(7) {
+                    transition-delay: .5s;
+                }
+                &:nth-child(8) {
+                    transition-delay: .55s;
+                }
+                &:nth-child(9) {
+                    transition-delay: .6s;
+                }
+                &:nth-child(10) {
+                    transition-delay: .65s;
+                }
+            }
+        }
+    }
+}
+
+
+.road-map {
+    &__box {
+        &.anim-start {
+            .road-map__line {
+                opacity: 1;
+            }
+        }
+        .road-map__line {
+            transition-delay: .15s;
+        }
+    }
+}
+
+.can-found {
+    &__box {
+        &:nth-child(2) {
+            @include phone-large--min {
+                transition-delay: .15s;
+            }
+        }
+    }
+}

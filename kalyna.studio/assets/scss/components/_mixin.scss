@@ -1,0 +1,65 @@
+@function size($target) {
+    @return calc(($target / 16) * 1rem);
+}
+
+// media
+@mixin table--min {
+    @media screen and (min-width: 1025px) { @content; }
+}
+
+@mixin table {
+    @media screen and (max-width: 1024px) { @content; }
+}
+
+@mixin phone-table {
+    @media screen and (max-width: 1024px) and (min-width: 768px) { @content; }
+}
+
+@mixin phone-large--min {
+    @media screen and (min-width: 768px) { @content; }
+}
+
+@mixin phone-large {
+    @media screen and (max-width: 767px) { @content; }
+}
+
+@mixin phone-l--phone-s {
+    @media screen and (max-width: 767px) and (min-width: 481px) { @content; }
+}
+
+@mixin phone-small--min {
+    @media screen and (min-width: 481px) { @content; }
+}
+
+@mixin phone-small {
+    @media screen and (max-width: 480px) { @content; }
+}
+
+
+@mixin hover {
+    @media (hover: hover) { @content; }
+}
+
+@mixin disabled {
+    &[disabled] {
+        opacity: .6;
+        pointer-events: none;
+    }
+}
+
+// button
+@mixin highlight {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+// transition
+@mixin ti-1 {
+    transition: .1s linear;
+}
+@mixin ti-15 {
+    transition: .15s linear;
+}

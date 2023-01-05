@@ -1,0 +1,103 @@
+*, *:before, *:after {
+    outline: none !important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent !important;
+    -moz-tap-highlight-color: transparent !important;
+    -o-tap-highlight-color: transparent !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+    transition: 5000000s ease-in-out 0s;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: var(--font-family);
+    color: var(--text-main);
+    background-color: var(--bg-primary-100);
+    font-size: 16px;
+    line-height: 1.4;
+    min-width: 320px;
+    &.scroll-hidden {
+        overflow: hidden;
+    }
+}
+
+.default-cont {
+    position: relative;
+    z-index: 2;
+    background-color: var(--bg-main);
+    transition: transform .35s ease;
+    box-shadow: var(--page-shadow);
+    &.menu-active {
+        transform: translateX(-300px);
+    }
+}
+button, input, textarea {
+    font-family: var(--font-family);
+}
+h1, h2, h3, span, p {
+    cursor: default;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: unset;
+    & * {
+        cursor: pointer;
+    }
+}
+input:invalid {
+    box-shadow: none;
+}
+img {
+    max-width: 100%;
+}
+button {
+    border: none;
+    cursor: pointer;
+    span, p {
+        cursor: pointer;
+    }
+}
+footer {
+    margin-top: auto;
+}
+main {
+    min-height: calc(100vh - 88px);
+    @include table {
+        min-height: calc(100vh - 64px);
+    }
+    &.footer--white {
+        ~ footer {
+            background-color: var(--bg-primary-100);
+        }
+    }
+}
+main, footer, .error-layout {
+    position: relative;
+    z-index: 1;
+}
+
+
+.wrapper {
+    width: 100%;
+    max-width: 1344px;
+    margin: 0 auto;
+    @include phone-large--min {
+        padding: 0 32px;
+    }
+    @include phone-large {
+        padding: 0 24px;
+    }
+    @include phone-small {
+        padding: 0 16px;
+    }
+}
