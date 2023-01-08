@@ -1,4 +1,4 @@
-## Uber для денежных переводов без ограничений Transfer Done
+## Transfer Done для денежных переводов без ограничений
 https://transferdone.io/
 
 ```
