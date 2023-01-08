@@ -1,0 +1,14 @@
+.overlay-enter-active, .overlay-leave-active {
+    transition: .15s linear;
+}
+.overlay-enter-from, .overlay-leave-to {
+    opacity: 0;
+}
+
+.scheme-enter-active, .scheme-leave-active {
+    transition: .35s linear;
+}
+.scheme-enter-from, .scheme-leave-to {
+    opacity: 0;
+    transform: rotate(35deg) scale(0.6);
+}

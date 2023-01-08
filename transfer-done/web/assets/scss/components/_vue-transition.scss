@@ -1,0 +1,17 @@
+.hw-slider-enter-active, .hw-slider-leave-active {
+    transition: .65s ease;
+}
+.overlay-enter-active, .overlay-leave-active {
+    transition: .35s ease;
+}
+.hw-slider-enter, .hw-slider-leave-to, .overlay-enter, .overlay-leave-to {
+    opacity: 0;
+}
+
+.menu-mobile-enter-active, .menu-mobile-leave-active {
+    transition: .35s ease;
+}
+.menu-mobile-enter, .menu-mobile-leave-to {
+    opacity: 0;
+    transform: translateX(100%);
+}

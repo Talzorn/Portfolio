@@ -1,0 +1,32 @@
+// media
+@mixin table-large {
+    @media screen and (min-width: 1024px) { @content; }
+}
+
+@mixin phone-medium {
+    @media screen and (min-width: 680px) { @content; }
+}
+
+@mixin phone-small {
+    @media screen and (min-width: 480px) { @content; }
+}
+
+@mixin phone-mini {
+    @media screen and (max-width: 350px) { @content; }
+}
+
+@mixin disabled {
+    &[disabled] {
+        opacity: .6;
+        cursor: no-drop;
+    }
+}
+
+
+// transition
+@mixin ti-1 {
+    transition: .1s linear;
+}
+@mixin ti-15 {
+    transition: .15s linear;
+}

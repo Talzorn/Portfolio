@@ -1,0 +1,78 @@
+// fonts
+$f-montserrat: 'Montserrat', sans-serif;
+
+
+// color
+$black: #090909;
+$black-100: #222222;
+$black-200: #181818;
+$white: #fff;
+$gray: #8B8B8B;
+$violet: #6C6AEB;
+$violet-shade: #5f5dcf;
+
+
+// bg
+$bg-main: $black;
+$bg-main--white: $white;
+$bg-black: $black;
+$bg-black-100: $black-100;
+$bg-black-200: $black-200;
+$bg-white: $white;
+$bg-violet-light: #c7c6f5;
+$bg-overlay: rgb(9 9 9 / 70%);
+
+
+// text
+$text-black: $black;
+$text-white: $white;
+$text-gray: $gray;
+$text-violet: $violet;
+
+
+// gradient
+$gradient-blue: linear-gradient(121.43deg, $violet -11.44%, $violet-shade 128.06%); // how it works - active bg
+
+
+// btn
+$btn-bg-violet: $violet;
+$btn-bg-violet--hover: $violet-shade;
+$btn-bg-violet__title: $white;
+
+$scroll-top__bg: $black-200;
+$scroll-top__bg--hover: $gray;
+$scroll-top__arrow: $white;
+$scroll-top__border: $gray;
+
+
+// lang
+$lang-list__bg: $bg-black-100;
+$lang-list__bg--hover: rgb(108 106 235 / 35%);
+$lang-list__text: $text-white;
+$lang-list__text--active: $text-violet;
+
+
+// accordion - color
+$acc-top__bg: $black-100;
+$acc-top__bg--hover: #383838;
+$acc-middle__br: $black-100;
+$acc-separator: $black;
+$acc-title: $text-white;
+$acc-desc: $text-white;
+
+
+// tabs
+$tab-main-bg: $black-100;
+$tab-main-text: $text-white;
+$tab-main-bg--active: $violet;
+
+
+// roadmap
+$roadmap__title: $text-white;
+$roadmap__text: $text-gray;
+$roadmap__line: $violet;
+$roadmap__circle: $violet;
+
+$roadmap-arrow__bg: $black-100;
+$roadmap-arrow__text: $text-white;
+$roadmap-arrow__bg-hover: $violet;

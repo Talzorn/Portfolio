@@ -1,0 +1,236 @@
+/* Ionic Variables and Theming. For more info, please see:
+http://ionicframework.com/docs/theming/ */
+
+:root {
+    /* fonts */
+    --ion-font-family: 'SegoeUI', sans-serif;
+
+    /* colors */
+    --main-orange: #FFCC7E;
+    --main-purple: #9F9DF3;
+    --main-purple-2: #767DFF;
+    --main-pink: #F04086;
+    --main-yellow: #F7931A;
+    --main-green: #58c689;
+    --main-blue: #66B6FF;
+    --main-red: #FF6464;
+    --ion-color-success: var(--main-green);
+    --ion-color-danger: var(--main-red);
+
+
+    /* bg colors */
+    --ion-background-color: #141629;
+    --bg-primary-100: #282C4A;
+    --bg-primary-200: #1C203A;
+    --bg-purple: #6C6AEB;
+    --bg-orange: #F09654;
+    --bg-pink: #FF6E91;
+
+
+    /* text colors */
+    --ion-text-color: #fff;
+    --text-primary: #FFFFFF;
+    --text-secondary: #9395A4;
+    --text-tertiary: #767DFF;
+
+
+    /* button colors */
+    --btn-primary__bg: #6C6AEB;
+    --btn-primary__bg--active: #8381ee;
+    --btn-primary__text: #FFFFFF;
+    --btn-secondary__bg: #282B54;
+    --btn-secondary__bg--active: #383c75;
+    --btn-secondary__text: #767DFF;
+    --btn-danger__bg: var(--main-red);
+    --btn-danger__bg--active: #ff7a7a;
+    --btn-danger__text: #FFFFFF;
+    --btn-success__bg: var(--main-green);
+    --btn-success__bg--active: #76d09f;
+    --btn-success__text: #FFFFFF;
+    --btn-dark__bg: #141629;
+    --btn-dark__bg--active: #222544;
+    --btn-dark__text: #FFFFFF;
+    --btn-icon__bg: #282C4A;
+    --btn-icon__text: #FFFFFF;
+
+
+    /* toolbar */
+    --ion-toolbar-border-color: #141629;
+    --ion-toolbar-color: #fff;
+    --toolbar-background: #141629;
+
+
+    /* nav menu */
+    --ion-tab-bar-background: #282C4A;
+    --ion-tab-bar-color: #747792;
+    --ion-tab-bar-color-selected: #FFFFFF;
+    --ion-tab-bar-background-focused: #FFFFFF;
+
+
+    /* circle colors */
+    --circle-orange__icon: #F7931A;
+    --circle-orange__bg: #514140;
+    --circle-purple__icon: #9F9DF3;
+    --circle-purple__bg: #383C6E;
+    --circle-purple-2__icon: #767DFF;
+    --circle-purple-2__bg: #3B3A62;
+    --circle-green__icon: #5FC88F;
+    --circle-green__bg: #2E444A;
+    --circle-blue__icon: #66B6FF;
+    --circle-blue__bg: #2B3E61;
+    --circle-red__icon: #FF6464;
+    --circle-red__bg: #462649;
+
+
+    /* input */
+    --form__hr: #535770;
+    --input__placeholder: var(--text-secondary);
+    --input__focus: var(--btn-primary__bg);
+    --input__error: #df2727;
+
+
+    /* backdrop */
+    --ion-backdrop-opacity: 1;
+    --ion-backdrop-color: rgba(37, 39, 57, 0.6);
+    --ion-backdrop-blur: blur(24px);
+
+
+    /* toast */
+    --toast-bg: var(--bg-primary-100);
+    --toast-color: var(--ion-text-color);
+    --toast-success: var(--ion-text-color);
+    --toast-error: var(--ion-text-color);
+
+
+    /* design circle */
+    --d-circle--primary: #EB6A98;
+    --d-circle--primary-opacity: 0.15;
+    --d-circle--secondary: #9E7DFC;
+    --d-circle--secondary-opacity: .1;
+    --d-circle--primary-tretiary: #EB6A98;
+    --d-circle--primary-tretiary-opacity: 0.15;
+
+
+    /* custom tabs */
+    --c-tab__bg: #0F1122;
+    --c-tab__bg--active: var(--bg-primary-100);
+    --c-tab__text: #9395A4;
+    --c-tab__text--active: var(--ion-text-color);
+
+
+    /* skeleton */
+    --skeleton-rgb: 108,106,235;
+
+
+    /* rating */
+    --rating: #FFE4C3;
+    --rating--active: #F7931A;
+
+
+    /* step */
+    --step__bg: #2C2F5C;
+    --step__bg--active: #6C6AEB;
+    --step__text: #6C6AEB;
+    --step__text--active: #fff;
+    --step__bg-line: #2C2F5C;
+
+
+    /* all */
+    --scheme-anim: var(--ion-background-color);
+}
+
+body.light {
+    /* bg colors */
+    --ion-background-color: #F3F5F6;
+    --bg-primary-100: #FDFDFD;
+    --bg-primary-200: #F7F7FA;
+    --bg-purple: #9F9DF3;
+    --bg-orange: #FFB783;
+    --bg-pink: #FF9BB3;
+
+
+    /* text colors */
+    --ion-text-color: #26273C;
+
+
+    /* button colors */
+    --btn-primary__bg: #191C32;
+    --btn-primary__bg--active: #2c3258;
+    --btn-primary__text: #FFFFFF;
+    --btn-secondary__bg: #FDFDFD;
+    --btn-secondary__bg--active: #e0e2ff;
+    --btn-secondary__text: #767DFF;
+    --btn-dark__bg: #FAFBFB;
+    --btn-dark__bg--active: #e8e8e8;
+    --btn-dark__text: #26273C;
+    --btn-icon__bg: #FDFDFD;
+    --btn-icon__text: #26273C;
+
+
+    /* toolbar */
+    --ion-toolbar-border-color: #F3F5F6;
+    --ion-toolbar-color: #26273C;
+    --toolbar-background: #F3F5F6;
+
+
+    /* nav menu */
+    --ion-tab-bar-background: #FFFFFF;
+    --ion-tab-bar-color: #CED0DE;
+    --ion-tab-bar-color-selected: #26273C;
+    --ion-tab-bar-background-focused: #26273C;
+
+
+    /* circle colors */
+    --circle-orange__bg: #FFEBE4;
+    --circle-purple__bg: #EBECFF;
+    --circle-purple-2__bg: #E0E2FF;
+    --circle-green__bg: #DEF5E9;
+    --circle-blue__bg: #DFF0FF;
+    --circle-red__bg: #FFDBDB;
+
+
+    /* input */
+    --form__hr: #E5E7F3;
+    --input__focus: var(--btn-primary__bg--active);
+
+
+    /* backdrop */
+    --ion-backdrop-color: rgba(205, 206, 219, 0.6);
+
+
+    /* toast */
+    --toast-bg: #FFFFFF;
+    --toast-color: var(--ion-text-color);
+    --toast-success: #FFFFFF;
+    --toast-error: #FFFFFF;
+
+
+    /* design circle */
+    --d-circle--primary: #FFC2C6;
+    --d-circle--primary-opacity: 0.55;
+    --d-circle--secondary: #F3E9FF;
+    --d-circle--secondary-opacity: 1;
+    --d-circle--primary-tretiary: #FFC2C6;
+    --d-circle--primary-tretiary-opacity: .5;
+
+
+    /* custom tabs */
+    --c-tab__bg: #EBEFF1;
+    --c-tab__bg--active: var(--bg-primary-100);
+    --c-tab__text--active: var(--ion-text-color);
+
+
+    /* skeleton */
+    --skeleton-rgb: 25,28,50;
+
+
+    /* step */
+    --step__bg: #fdfdfd;
+    --step__bg--active: #191C32;
+    --step__text: #191C32;
+    --step__bg-line: #fdfdfd;
+
+
+    /* all */
+    --scheme-anim: #fff;
+}

@@ -1,0 +1,109 @@
+html {
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    outline: none !important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent !important;
+    -moz-tap-highlight-color: transparent !important;
+    -o-tap-highlight-color: transparent !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+    transition: 5000000s ease-in-out 0s;
+}
+body {
+    font-family: $f-montserrat;
+    background-color: $bg-main;
+    color: $text-white;
+    font-size: 16px;
+    line-height: 1.4;
+    min-width: 320px;
+    &.scroll-hidden {
+        overflow: hidden;
+    }
+}
+button, input, textarea {
+    font-family: $f-montserrat;
+}
+h1, h2, h3, span, p {
+    cursor: default;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: unset;
+    & * {
+        cursor: pointer;
+    }
+}
+input:invalid {
+    box-shadow: none;
+}
+img {
+    max-width: 100%;
+}
+button {
+    border: none;
+    cursor: pointer;
+    span, p {
+        cursor: pointer;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1344px;
+    margin: 0 auto;
+    @include phone-large--min {
+        padding: 0 32px;
+    }
+    @include phone-large {
+        padding: 0 24px;
+    }
+    @include phone-small {
+        padding: 0 16px;
+    }
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 32px;
+    border: unset;
+    border-radius: 30px;
+    font-weight: 500;
+    line-height: 1;
+    @include ti-1;
+    @include highlight;
+    &--bg {
+        background-color: $btn-bg-violet;
+        color: $btn-bg-violet__title;
+        @include hover {
+            &:hover {
+                background-color: $btn-bg-violet--hover;
+            }
+        }
+        &:active {
+            background-color: $btn-bg-violet--hover;
+        }
+    }
+    &--small {
+        height: 48px;
+        font-size: 16px;
+        min-width: 120px;
+    }
+    &--large {
+        width: 100%;
+        max-width: 260px;
+        height: 58px;
+        font-size: 18px;
+    }
+}
